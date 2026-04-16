@@ -1,66 +1,74 @@
-#  ***Aluno***
-RF01, RF04, RF05, RF06, RF10
-idAluno
-nome
-cpf
-email
-telefone
-endereco
-rfid
-status
+# *Aluno*
+- RF01, RF04, RF05, RF06, RF10
+- idAluno
+- nome
+- cpf
+- email
+- telefone
+- endereco
+- rfid
+- status
+- contatarPlano()
+- agendarAula()
+- cancelarAula()
+- atualizarStatus()
+- registrarAcesso()
+- receberNotificacao()
 
-***Plano***
-RF01, RF02, RF04
-idPlano
-nome
-tipo
-valor
-ativo
+# *Plano*
+- RF01, RF02, RF04
+- idPlano
+- nome
+- tipo
+- valor
+- ativo
 
-***Pagamento***
-RF03, RF04, RF09
-idPagamento
-data
-valor
-formaPagamento
-status
 
-***Acesso***
-RF05, RF09
-idAcesso
-dataHora
-autorizado
 
-***Aula***
-RF06, RF07, RF09
-idAula
-nome
-horario
-capacidadeMaxima
+# *Pagamento*
+- RF03, RF04, RF09
+- idPagamento
+- data
+- valor
+- formaPagamento
+- status
 
-***Agendamento***
-RF06, RF10
-idAgendamento
-dataReserva
-status
+# *Acesso*
+- RF05, RF09
+- idAcesso
+- dataHora
+- autorizado
 
-***Presenca***
-RF07
-idPresenca
-data
-presente
+# *Aula*
+- RF06, RF07, RF09
+- idAula
+- nome
+- horario
+- capacidadeMaxima
 
-***AvaliacaoFisica***
-RF08, RF10
-idAvaliacao
-data
+# *Agendamento*
+- RF06, RF10
+- idAgendamento
+- dataReserva
+- status
+
+# *Presenca*
+- RF07
+- idPresenca
+- data
+- presente
+
+# *AvaliacaoFisica*
+- RF08, RF10
+- idAvaliacao
+- data
 peso
 imc
 percentualGordura
 observacoes
 anexo
 
-***Notificacao***
+# *Notificacao*
 RF10
 idNotificacao
 tipo
@@ -68,18 +76,18 @@ dataEnvio
 status
 mensagem
 
- ***Instrutor***
+# *Instrutor*
 RF07, RF08
 idInstrutor
 nome
 especialidade
 
-***Recepcionista***
+# *Recepcionista*
 RF01, RF03
 idRecepcionista
 nome
 
-****Gerente***
+# *Gerente*
 RF02, RF09
 idGerente
 nome
